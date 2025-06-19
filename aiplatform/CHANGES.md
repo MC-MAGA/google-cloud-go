@@ -1,6 +1,56 @@
 # Changes
 
 
+## [1.91.0](https://github.com/googleapis/google-cloud-go/compare/aiplatform/v1.90.0...aiplatform/v1.91.0) (2025-06-17)
+
+
+### Features
+
+* **aiplatform:** Add dns_peering_configs to PscInterfaceConfig ([a013575](https://github.com/googleapis/google-cloud-go/commit/a01357592a61b05c19ee2c520ed59f02504c371a))
+* **aiplatform:** Add dns_peering_configs to PscInterfaceConfig ([9614487](https://github.com/googleapis/google-cloud-go/commit/96144875e01bfc8a59c2671c6eae87233710cef7))
+* **aiplatform:** Add DnsPeeringConfig in service_networking.proto ([a013575](https://github.com/googleapis/google-cloud-go/commit/a01357592a61b05c19ee2c520ed59f02504c371a))
+* **aiplatform:** Add DnsPeeringConfig in service_networking.proto ([#12421](https://github.com/googleapis/google-cloud-go/issues/12421)) ([9614487](https://github.com/googleapis/google-cloud-go/commit/96144875e01bfc8a59c2671c6eae87233710cef7))
+* **aiplatform:** Add EncryptionSpec field for RagCorpus CMEK feature to v1 ([9614487](https://github.com/googleapis/google-cloud-go/commit/96144875e01bfc8a59c2671c6eae87233710cef7))
+* **aiplatform:** Add RagEngineConfig update/get APIs to v1 ([a013575](https://github.com/googleapis/google-cloud-go/commit/a01357592a61b05c19ee2c520ed59f02504c371a))
+* **aiplatform:** Add Scaled tier for RagEngineConfig to v1beta, equivalent to Enterprise ([#12460](https://github.com/googleapis/google-cloud-go/issues/12460)) ([a013575](https://github.com/googleapis/google-cloud-go/commit/a01357592a61b05c19ee2c520ed59f02504c371a))
+* **aiplatform:** Add Unprovisioned tier to RagEngineConfig in v1beta1 that can disable RagEngine service and delete all data within the service ([a013575](https://github.com/googleapis/google-cloud-go/commit/a01357592a61b05c19ee2c520ed59f02504c371a))
+* **aiplatform:** Add Unprovisioned tier to RagEngineConfig to disable RagEngine service and delete all data within the service. ([a013575](https://github.com/googleapis/google-cloud-go/commit/a01357592a61b05c19ee2c520ed59f02504c371a))
+* **aiplatform:** Expose UrlContextMetadata API to v1 ([feb078b](https://github.com/googleapis/google-cloud-go/commit/feb078b04ab541dd3bdceb2ac1f24938bb0354a3))
+* **aiplatform:** Expose UrlContextMetadata API to v1beta1 ([feb078b](https://github.com/googleapis/google-cloud-go/commit/feb078b04ab541dd3bdceb2ac1f24938bb0354a3))
+* **aiplatform:** Introduce RagFileMetadataConfig for importing metadata to Rag ([9614487](https://github.com/googleapis/google-cloud-go/commit/96144875e01bfc8a59c2671c6eae87233710cef7))
+
+
+### Documentation
+
+* **aiplatform:** Enterprise tier in RagEngineConfig, use Scaled tier instead. ([a013575](https://github.com/googleapis/google-cloud-go/commit/a01357592a61b05c19ee2c520ed59f02504c371a))
+
+## [1.90.0](https://github.com/googleapis/google-cloud-go/compare/aiplatform/v1.89.0...aiplatform/v1.90.0) (2025-06-04)
+
+
+### Features
+
+* **aiplatform:** A new field `include_thoughts` is added to message `.google.cloud.aiplatform.v1.GenerationConfig.ThinkingConfig` ([394ef95](https://github.com/googleapis/google-cloud-go/commit/394ef958d4cbb29fedb6b331581ce1390c65ccb6))
+* **aiplatform:** A new field `thought_signature` is added to message `.google.cloud.aiplatform.v1.Part` ([394ef95](https://github.com/googleapis/google-cloud-go/commit/394ef958d4cbb29fedb6b331581ce1390c65ccb6))
+* **aiplatform:** A new field `thought` is added to message `.google.cloud.aiplatform.v1.Part` ([394ef95](https://github.com/googleapis/google-cloud-go/commit/394ef958d4cbb29fedb6b331581ce1390c65ccb6))
+* **aiplatform:** Add json schema support to structured output and function declaration ([4ee690e](https://github.com/googleapis/google-cloud-go/commit/4ee690e07fddac5d742561bf39cd3b610de7d80a))
+* **aiplatform:** Add json schema support to structured output and function declaration ([#12382](https://github.com/googleapis/google-cloud-go/issues/12382)) ([4ee690e](https://github.com/googleapis/google-cloud-go/commit/4ee690e07fddac5d742561bf39cd3b610de7d80a))
+* **aiplatform:** Add network_attachment to PscInterfaceConfig ([#12356](https://github.com/googleapis/google-cloud-go/issues/12356)) ([394ef95](https://github.com/googleapis/google-cloud-go/commit/394ef958d4cbb29fedb6b331581ce1390c65ccb6))
+* **aiplatform:** Add psc_interface_config to CustomJobSpec ([394ef95](https://github.com/googleapis/google-cloud-go/commit/394ef958d4cbb29fedb6b331581ce1390c65ccb6))
+* **aiplatform:** Add psc_interface_config to PersistentResource ([394ef95](https://github.com/googleapis/google-cloud-go/commit/394ef958d4cbb29fedb6b331581ce1390c65ccb6))
+* **aiplatform:** Add psc_interface_config to PipelineJob ([394ef95](https://github.com/googleapis/google-cloud-go/commit/394ef958d4cbb29fedb6b331581ce1390c65ccb6))
+* **aiplatform:** Expose URL Context API to v1 ([394ef95](https://github.com/googleapis/google-cloud-go/commit/394ef958d4cbb29fedb6b331581ce1390c65ccb6))
+* **aiplatform:** Expose URL Context API to v1beta1 ([394ef95](https://github.com/googleapis/google-cloud-go/commit/394ef958d4cbb29fedb6b331581ce1390c65ccb6))
+
+
+### Bug Fixes
+
+* **aiplatform:** Fix: upgrade gRPC service registration func ([6a871e0](https://github.com/googleapis/google-cloud-go/commit/6a871e0f6924980da4fec78405bfe0736522afa8))
+
+
+### Documentation
+
+* **aiplatform:** Allow field `thought` to be set as input ([394ef95](https://github.com/googleapis/google-cloud-go/commit/394ef958d4cbb29fedb6b331581ce1390c65ccb6))
+
 ## [1.89.0](https://github.com/googleapis/google-cloud-go/compare/aiplatform/v1.88.0...aiplatform/v1.89.0) (2025-05-29)
 
 
